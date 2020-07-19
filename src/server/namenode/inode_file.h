@@ -9,8 +9,7 @@ namespace satifs {
     class INodeFile : public INode {
     public:
         void add_block(BlockInfo* blockInfo);
-        void get_blocks();
-        void get_blocks(int snapshot);
+        std::vector<BlockInfo*> get_blocks();
         BlockInfo* get_last_block();
     private:
         long header = 0L;

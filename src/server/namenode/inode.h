@@ -7,7 +7,7 @@
 #include "inode_attributes.h"
 
 namespace satifs {
-    class INode : INodeAttributes {
+    class INode : public INodeAttributes {
     public:
         INode* parent;
         virtual long getId() = 0;

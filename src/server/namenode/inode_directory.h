@@ -5,10 +5,9 @@
 #include "inode.h"
 
 namespace satifs {
-    class INodeDirectory :INode {
+    class INodeDirectory: public INode {
         public:
-        
-
+        virual bool is_directory();
     };
 }
 
