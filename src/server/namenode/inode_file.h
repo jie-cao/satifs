@@ -1,11 +1,20 @@
 #ifndef SATIFS_INODE_FILE_H
 #define SATIFS_INODE_FILE_H
 
+#include <vector>
 #include "inode.h"
+#include "server/block_management/block_info.h"
 
 namespace satifs {
-    class InodeFile : INode {
-
+    class INodeFile : public INode {
+    public:
+        void add_block(BlockInfo* blockInfo);
+        void get_blocks();
+        void get_blocks(int snapshot);
+        BlockInfo* get_last_block();
+    private:
+        long header = 0L;
+        std::vector<BlockInfo*> blocks;
     };
 }
 
