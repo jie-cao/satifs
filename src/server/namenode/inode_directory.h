@@ -7,7 +7,7 @@
 namespace satifs {
     class INodeDirectory: public INode {
         public:
-        virual bool is_directory();
+        virtual bool is_directory();
     };
 }
 

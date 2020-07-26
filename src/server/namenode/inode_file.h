@@ -6,7 +6,7 @@
 #include "server/block_management/block_info.h"
 
 namespace satifs {
-    class INodeFile : public INode {
+    class INodeFile {
     public:
         void add_block(BlockInfo* blockInfo);
         std::vector<BlockInfo*> get_blocks();

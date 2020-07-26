@@ -11,7 +11,7 @@ namespace satifs {
     class INodeAttributes {
         public:
             virtual bool is_directory() = 0;
-            virtual uint8_t[] get_local_name_bytes() = 0;
+            virtual std::vector<uint8_t> get_local_name_bytes() = 0;
             virtual std::string get_user_name() = 0;
             virtual std::string get_group_name() = 0;
             virtual long get_permission_long() = 0;
