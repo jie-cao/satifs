@@ -15,7 +15,7 @@ protobuf_generate_cpp(COUNTER_PROTO_SRCS COUNTER_PROTO_HDRS src/proto/counter.pr
 
 find_path(BRPC_INCLUDE_PATH NAMES brpc/server.h)
 find_library(BRPC_LIB NAMES library/lib/libbrpc.a brpc)
-
+find_library(BRAFT_LIB NAMES library/lib/libbraft.a braft)
 find_library(ROCKSDB_LIB NAMES librocksdb.a PATHS ${LINK_DIR} NO_DEFAULT_PATH)
 find_library(Z_LIB NAMES libz.a PATHS ${LINK_DIR} NO_DEFAULT_PATH)
 find_library(SNAPPY_LIB NAMES libsnappy.a PATHS ${LINK_DIR} NO_DEFAULT_PATH)
@@ -24,11 +24,14 @@ find_library(LZ4_LIB NAMES liblz4.a PATHS ${LINK_DIR} REQUIRED)
 find_library(ZSTD_LIB NAMES libzstd.a PATHS ${LINK_DIR} REQUIRED)
 find_library(BZ2_LIB NAMES libbz2.a PATHS ${LINK_DIR} REQUIRED)
 
+find_library(GTEST_LIB NAMES libgtest.a PATHS ${LINK_DIR} NO_DEFAULT_PATH)
+find_library(GTEST_MAIN_LIB NAMES libgtest_main.a PATHS ${LINK_DIR} NO_DEFAULT_PATH)
+set(GTEST_BOTH_LIBRARIES ${GTEST_LIB} ${GTEST_MAIN_LIB})
+
 find_library(SPDLOG_LIB NAMES libspdlog.a PATHS ${LINK_DIR} NO_DEFAULT_PATH)
 if((NOT BRPC_INCLUDE_PATH) OR (NOT BRPC_LIB))
     message(FATAL_ERROR "Fail to find brpc")
 endif()
-
 
 SET(DYNAMIC_LIBS
         ${Z_LIB}
@@ -47,12 +50,20 @@ include_directories(${PROJECT_SOURCE_DIR}/src)
 
 link_directories(${LINK_DIR})
 
-add_executable(satifs main.cpp src/server/namenode/inode.cpp src/server/namenode/inode.h src/server/namenode/inode_attributes.cpp
-        src/server/namenode/inode_attributes.h src/server/namenode/inode_file.h src/server/namenode/inode_file.cpp src/server/namenode/inode_directory.h
-        src/server/namenode/inode_directory.cpp src/server/block_management/block_info.cpp src/server/block_management/block_info.h
-        src/server/block_management/datanode_storage_info.cpp src/server/block_management/datanode_storage_info.h
-        ${PROTO_SRCS} ${PROTO_HDRS} ${COUNTER_PROTO_SRCS} ${COUNTER_PROTO_HDRS} src/server/ha/raft_service.cpp src/server/ha/raft_service.h src/test/inode_file_test.cpp)
-target_link_libraries(satifs ${BRPC_LIB} ${Protobuf_LIBRARIES} ${ROCKSDB_LIB} ${DYNAMIC_LIBS})
+FILE(GLOB_RECURSE MAIN_SOURCES src/server/*.cpp)
+add_library(SATIFS_SERVER_LIB OBJECT ${MAIN_SOURCES})
+set_property(TARGET SATIFS_SERVER_LIB PROPERTY POSITION_INDEPENDENT_CODE 1)
 
+#Building server
+add_executable(satifs_server main.cpp ${PROTO_SRCS} ${PROTO_HDRS} ${COUNTER_PROTO_SRCS} ${COUNTER_PROTO_HDRS}
+        $<TARGET_OBJECTS:SATIFS_SERVER_LIB>)
+target_link_libraries(satifs_server ${BRPC_LIB} ${BRAFT_LIB} ${Protobuf_LIBRARIES} ${ROCKSDB_LIB} ${DYNAMIC_LIBS})
+
+#Building client
 add_executable(satifs_client src/client/client.cpp ${PROTO_SRCS} ${PROTO_HDRS} ${COUNTER_PROTO_SRCS} ${COUNTER_PROTO_HDRS})
 target_link_libraries(satifs_client ${BRPC_LIB} ${Protobuf_LIBRARIES} ${SPDLOG_LIB})
+
+#Building test
+FILE(GLOB TEST_SOURCE src/test/*.cpp)
+add_executable(satifs_test ${TEST_SOURCE} $<TARGET_OBJECTS:SATIFS_SERVER_LIB>)
+target_link_libraries(satifs_test ${BRPC_LIB} ${BRAFT_LIB} ${Protobuf_LIBRARIES} ${SPDLOG_LIB} ${GTEST_BOTH_LIBRARIES})

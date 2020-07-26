@@ -26,7 +26,7 @@ DEFINE_bool(disable_cli, false, "Don't allow raft_cli access this node");
 DEFINE_bool(log_applied_task, false, "Print notice log when a task is applied");
 DEFINE_int32(election_timeout_ms, 5000,
              "Start election in such milliseconds if disconnect with the leader");
-DEFINE_int32(port, 8100, "Listen port of this peer");
+DEFINE_int32(service_port, 8100, "Listen port of this peer");
 DEFINE_int32(snapshot_interval, 30, "Interval between each snapshot");
 DEFINE_string(conf, "", "Initial configuration of the replication group");
 DEFINE_string(data_path, "./data", "Path of data stored on");
@@ -73,7 +73,7 @@ namespace satifs {
 
         // Starts this node
         int start() {
-            butil::EndPoint addr(butil::my_ip(), FLAGS_port);
+            butil::EndPoint addr(butil::my_ip(), FLAGS_service_port);
             braft::NodeOptions node_options;
             if (node_options.initial_conf.parse_from(FLAGS_conf) != 0) {
                 LOG(ERROR) << "Fail to parse configuration `" << FLAGS_conf << '\'';

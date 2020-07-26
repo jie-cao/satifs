@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="satifs"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/jiecao/Documents/code/satifs/satifs"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/jiecao/Documents/code/satifs/satifs/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/jiecao/Documents/code/satifs/satifs/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/jiecao/Documents/code/satifs/satifs/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/jiecao/Documents/code/satifs/satifs/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/jiecao/Documents/code/satifs/satifs"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/jiecao/Documents/code/satifs/satifs/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/jiecao/Documents/code/satifs/satifs/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/jiecao/Documents/code/satifs/satifs/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/jiecao/Documents/code/satifs/satifs/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="satifs_client">
+				<Option output="/Users/jiecao/Documents/code/satifs/satifs/satifs_client" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/jiecao/Documents/code/satifs/satifs"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Users/jiecao/Documents/code/satifs/satifs"/>
+					<Add directory="/Users/jiecao/Documents/code/satifs/library/include"/>
+					<Add directory="/Users/jiecao/Documents/code/satifs/satifs/src"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/jiecao/Documents/code/satifs/satifs/Makefile&quot;  VERBOSE=1 satifs_client"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/jiecao/Documents/code/satifs/satifs/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/jiecao/Documents/code/satifs/satifs/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/jiecao/Documents/code/satifs/satifs/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="satifs_client/fast">
+				<Option output="/Users/jiecao/Documents/code/satifs/satifs/satifs_client" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/jiecao/Documents/code/satifs/satifs"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Users/jiecao/Documents/code/satifs/satifs"/>
+					<Add directory="/Users/jiecao/Documents/code/satifs/library/include"/>
+					<Add directory="/Users/jiecao/Documents/code/satifs/satifs/src"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/jiecao/Documents/code/satifs/satifs/Makefile&quot;  VERBOSE=1 satifs_client/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/jiecao/Documents/code/satifs/satifs/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/jiecao/Documents/code/satifs/satifs/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/jiecao/Documents/code/satifs/satifs/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="satifs_test">
+				<Option output="/Users/jiecao/Documents/code/satifs/satifs/satifs_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/jiecao/Documents/code/satifs/satifs"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Users/jiecao/Documents/code/satifs/satifs"/>
+					<Add directory="/Users/jiecao/Documents/code/satifs/library/include"/>
+					<Add directory="/Users/jiecao/Documents/code/satifs/satifs/src"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/jiecao/Documents/code/satifs/satifs/Makefile&quot;  VERBOSE=1 satifs_test"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/jiecao/Documents/code/satifs/satifs/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/jiecao/Documents/code/satifs/satifs/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/jiecao/Documents/code/satifs/satifs/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="satifs_test/fast">
+				<Option output="/Users/jiecao/Documents/code/satifs/satifs/satifs_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/jiecao/Documents/code/satifs/satifs"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Users/jiecao/Documents/code/satifs/satifs"/>
+					<Add directory="/Users/jiecao/Documents/code/satifs/library/include"/>
+					<Add directory="/Users/jiecao/Documents/code/satifs/satifs/src"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/jiecao/Documents/code/satifs/satifs/Makefile&quot;  VERBOSE=1 satifs_test/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/jiecao/Documents/code/satifs/satifs/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/jiecao/Documents/code/satifs/satifs/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/jiecao/Documents/code/satifs/satifs/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="satifs_server">
+				<Option output="/Users/jiecao/Documents/code/satifs/satifs/satifs_server" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/jiecao/Documents/code/satifs/satifs"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Users/jiecao/Documents/code/satifs/satifs"/>
+					<Add directory="/Users/jiecao/Documents/code/satifs/library/include"/>
+					<Add directory="/Users/jiecao/Documents/code/satifs/satifs/src"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/jiecao/Documents/code/satifs/satifs/Makefile&quot;  VERBOSE=1 satifs_server"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/jiecao/Documents/code/satifs/satifs/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/jiecao/Documents/code/satifs/satifs/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/jiecao/Documents/code/satifs/satifs/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="satifs_server/fast">
+				<Option output="/Users/jiecao/Documents/code/satifs/satifs/satifs_server" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/jiecao/Documents/code/satifs/satifs"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Users/jiecao/Documents/code/satifs/satifs"/>
+					<Add directory="/Users/jiecao/Documents/code/satifs/library/include"/>
+					<Add directory="/Users/jiecao/Documents/code/satifs/satifs/src"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/jiecao/Documents/code/satifs/satifs/Makefile&quot;  VERBOSE=1 satifs_server/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/jiecao/Documents/code/satifs/satifs/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/jiecao/Documents/code/satifs/satifs/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/jiecao/Documents/code/satifs/satifs/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/jiecao/Documents/code/satifs/satifs"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/jiecao/Documents/code/satifs/satifs/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/jiecao/Documents/code/satifs/satifs/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/jiecao/Documents/code/satifs/satifs/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/jiecao/Documents/code/satifs/satifs/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SATIFS_SERVER_LIB">
+				<Option output="/Users/jiecao/Documents/code/satifs/satifs/CMakeFiles/SATIFS_SERVER_LIB.dir/SATIFS_SERVER_LIB.objlib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/jiecao/Documents/code/satifs/satifs"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Users/jiecao/Documents/code/satifs/satifs"/>
+					<Add directory="/Users/jiecao/Documents/code/satifs/library/include"/>
+					<Add directory="/Users/jiecao/Documents/code/satifs/satifs/src"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/jiecao/Documents/code/satifs/satifs/Makefile&quot;  VERBOSE=1 SATIFS_SERVER_LIB"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/jiecao/Documents/code/satifs/satifs/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/jiecao/Documents/code/satifs/satifs/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/jiecao/Documents/code/satifs/satifs/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SATIFS_SERVER_LIB/fast">
+				<Option output="/Users/jiecao/Documents/code/satifs/satifs/CMakeFiles/SATIFS_SERVER_LIB.dir/SATIFS_SERVER_LIB.objlib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/jiecao/Documents/code/satifs/satifs"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Users/jiecao/Documents/code/satifs/satifs"/>
+					<Add directory="/Users/jiecao/Documents/code/satifs/library/include"/>
+					<Add directory="/Users/jiecao/Documents/code/satifs/satifs/src"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/jiecao/Documents/code/satifs/satifs/Makefile&quot;  VERBOSE=1 SATIFS_SERVER_LIB/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/jiecao/Documents/code/satifs/satifs/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/jiecao/Documents/code/satifs/satifs/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/jiecao/Documents/code/satifs/satifs/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/jiecao/Documents/code/satifs/satifs/CMakeFiles/SATIFS_SERVER_LIB.dir/src/server/block_management/block_info.cpp.o">
+			<Option target="satifs_test"/>
+			<Option target="satifs_server"/>
+		</Unit>
+		<Unit filename="/Users/jiecao/Documents/code/satifs/satifs/CMakeFiles/SATIFS_SERVER_LIB.dir/src/server/block_management/datanode_storage_info.cpp.o">
+			<Option target="satifs_test"/>
+			<Option target="satifs_server"/>
+		</Unit>
+		<Unit filename="/Users/jiecao/Documents/code/satifs/satifs/CMakeFiles/SATIFS_SERVER_LIB.dir/src/server/ha/raft_service.cpp.o">
+			<Option target="satifs_test"/>
+			<Option target="satifs_server"/>
+		</Unit>
+		<Unit filename="/Users/jiecao/Documents/code/satifs/satifs/CMakeFiles/SATIFS_SERVER_LIB.dir/src/server/namenode/inode.cpp.o">
+			<Option target="satifs_test"/>
+			<Option target="satifs_server"/>
+		</Unit>
+		<Unit filename="/Users/jiecao/Documents/code/satifs/satifs/CMakeFiles/SATIFS_SERVER_LIB.dir/src/server/namenode/inode_attributes.cpp.o">
+			<Option target="satifs_test"/>
+			<Option target="satifs_server"/>
+		</Unit>
+		<Unit filename="/Users/jiecao/Documents/code/satifs/satifs/CMakeFiles/SATIFS_SERVER_LIB.dir/src/server/namenode/inode_directory.cpp.o">
+			<Option target="satifs_test"/>
+			<Option target="satifs_server"/>
+		</Unit>
+		<Unit filename="/Users/jiecao/Documents/code/satifs/satifs/CMakeFiles/SATIFS_SERVER_LIB.dir/src/server/namenode/inode_file.cpp.o">
+			<Option target="satifs_test"/>
+			<Option target="satifs_server"/>
+		</Unit>
+		<Unit filename="/Users/jiecao/Documents/code/satifs/satifs/counter.pb.cc">
+			<Option target="satifs_client"/>
+			<Option target="satifs_server"/>
+		</Unit>
+		<Unit filename="/Users/jiecao/Documents/code/satifs/satifs/counter.pb.h">
+			<Option target="satifs_client"/>
+			<Option target="satifs_server"/>
+		</Unit>
+		<Unit filename="/Users/jiecao/Documents/code/satifs/satifs/counter.pb.h.rule">
+			<Option target="satifs_client"/>
+			<Option target="satifs_server"/>
+		</Unit>
+		<Unit filename="/Users/jiecao/Documents/code/satifs/satifs/echo.pb.cc">
+			<Option target="satifs_client"/>
+			<Option target="satifs_server"/>
+		</Unit>
+		<Unit filename="/Users/jiecao/Documents/code/satifs/satifs/echo.pb.h">
+			<Option target="satifs_client"/>
+			<Option target="satifs_server"/>
+		</Unit>
+		<Unit filename="/Users/jiecao/Documents/code/satifs/satifs/echo.pb.h.rule">
+			<Option target="satifs_client"/>
+			<Option target="satifs_server"/>
+		</Unit>
+		<Unit filename="/Users/jiecao/Documents/code/satifs/satifs/main.cpp">
+			<Option target="satifs_server"/>
+		</Unit>
+		<Unit filename="/Users/jiecao/Documents/code/satifs/satifs/src/client/client.cpp">
+			<Option target="satifs_client"/>
+		</Unit>
+		<Unit filename="/Users/jiecao/Documents/code/satifs/satifs/src/server/block_management/block_info.cpp">
+			<Option target="SATIFS_SERVER_LIB"/>
+		</Unit>
+		<Unit filename="/Users/jiecao/Documents/code/satifs/satifs/src/server/block_management/block_info.h">
+			<Option target="SATIFS_SERVER_LIB"/>
+		</Unit>
+		<Unit filename="/Users/jiecao/Documents/code/satifs/satifs/src/server/block_management/datanode_storage_info.cpp">
+			<Option target="SATIFS_SERVER_LIB"/>
+		</Unit>
+		<Unit filename="/Users/jiecao/Documents/code/satifs/satifs/src/server/block_management/datanode_storage_info.h">
+			<Option target="SATIFS_SERVER_LIB"/>
+		</Unit>
+		<Unit filename="/Users/jiecao/Documents/code/satifs/satifs/src/server/ha/raft_service.cpp">
+			<Option target="SATIFS_SERVER_LIB"/>
+		</Unit>
+		<Unit filename="/Users/jiecao/Documents/code/satifs/satifs/src/server/ha/raft_service.h">
+			<Option target="SATIFS_SERVER_LIB"/>
+		</Unit>
+		<Unit filename="/Users/jiecao/Documents/code/satifs/satifs/src/server/namenode/inode.cpp">
+			<Option target="SATIFS_SERVER_LIB"/>
+		</Unit>
+		<Unit filename="/Users/jiecao/Documents/code/satifs/satifs/src/server/namenode/inode.h">
+			<Option target="SATIFS_SERVER_LIB"/>
+		</Unit>
+		<Unit filename="/Users/jiecao/Documents/code/satifs/satifs/src/server/namenode/inode_attributes.cpp">
+			<Option target="SATIFS_SERVER_LIB"/>
+		</Unit>
+		<Unit filename="/Users/jiecao/Documents/code/satifs/satifs/src/server/namenode/inode_attributes.h">
+			<Option target="SATIFS_SERVER_LIB"/>
+		</Unit>
+		<Unit filename="/Users/jiecao/Documents/code/satifs/satifs/src/server/namenode/inode_directory.cpp">
+			<Option target="SATIFS_SERVER_LIB"/>
+		</Unit>
+		<Unit filename="/Users/jiecao/Documents/code/satifs/satifs/src/server/namenode/inode_directory.h">
+			<Option target="SATIFS_SERVER_LIB"/>
+		</Unit>
+		<Unit filename="/Users/jiecao/Documents/code/satifs/satifs/src/server/namenode/inode_file.cpp">
+			<Option target="SATIFS_SERVER_LIB"/>
+		</Unit>
+		<Unit filename="/Users/jiecao/Documents/code/satifs/satifs/src/server/namenode/inode_file.h">
+			<Option target="SATIFS_SERVER_LIB"/>
+		</Unit>
+		<Unit filename="/Users/jiecao/Documents/code/satifs/satifs/src/test/inode_file_test.cpp">
+			<Option target="satifs_test"/>
+		</Unit>
+		<Unit filename="/Users/jiecao/Documents/code/satifs/satifs/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
