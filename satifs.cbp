@@ -202,6 +202,10 @@
 			<Option target="satifs_test"/>
 			<Option target="satifs_server"/>
 		</Unit>
+		<Unit filename="/Users/jiecao/Documents/code/satifs/satifs/CMakeFiles/SATIFS_SERVER_LIB.dir/src/server/main_server.cpp.o">
+			<Option target="satifs_test"/>
+			<Option target="satifs_server"/>
+		</Unit>
 		<Unit filename="/Users/jiecao/Documents/code/satifs/satifs/CMakeFiles/SATIFS_SERVER_LIB.dir/src/server/namenode/inode.cpp.o">
 			<Option target="satifs_test"/>
 			<Option target="satifs_server"/>
@@ -264,6 +268,12 @@
 			<Option target="SATIFS_SERVER_LIB"/>
 		</Unit>
 		<Unit filename="/Users/jiecao/Documents/code/satifs/satifs/src/server/ha/raft_service.h">
+			<Option target="SATIFS_SERVER_LIB"/>
+		</Unit>
+		<Unit filename="/Users/jiecao/Documents/code/satifs/satifs/src/server/main_server.cpp">
+			<Option target="SATIFS_SERVER_LIB"/>
+		</Unit>
+		<Unit filename="/Users/jiecao/Documents/code/satifs/satifs/src/server/main_server.h">
 			<Option target="SATIFS_SERVER_LIB"/>
 		</Unit>
 		<Unit filename="/Users/jiecao/Documents/code/satifs/satifs/src/server/namenode/inode.cpp">
